@@ -253,7 +253,7 @@ export default class ModalDropdown extends Component {
                 return op.length
             })
             var factor = Math.max(...array) * this._buttonFrame.w / buttonText.length;
-            positionStyle.left = this._buttonFrame.x - ((factor / 2) - (this._buttonFrame.w / 2));
+            positionStyle.left = this._buttonFrame.x - ((factor / 4) - (this._buttonFrame.w / 4));
         } else {
             const dropdownWidth = (dropdownStyle && StyleSheet.flatten(dropdownStyle).width) ||
                 (style && StyleSheet.flatten(style).width) || -1;
